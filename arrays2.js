@@ -7,6 +7,8 @@ function isArrayLengthOdd(numbers) {
     }
 }
 
+
+
 // TASK 2
 function isArrayLengthEven(numbers) {
     if (numbers.length % 2 == 0) {
@@ -15,6 +17,8 @@ function isArrayLengthEven(numbers) {
         return false;
     }
 }
+
+
 
 // TASK 3
 function addLailaToArray(instructors) {
@@ -29,6 +33,8 @@ function addLailaToArray(instructors) {
 let names = ['jenan', 'rayan', 'fahad'];
 console.log(addLailaToArray(names));
 
+
+
 // TASK 4
 function eliminateTeam(teams) {
     eliminated = teams.pop();
@@ -37,6 +43,8 @@ function eliminateTeam(teams) {
 
 let teams = ['red', 'blue', 'yellow', 'green'];
 console.log(eliminateTeam(teams));
+
+
 
 // CHALLENGE 1
 function secondHalfOfArrayIfItIsEven(fruits) {
@@ -52,18 +60,18 @@ let fruits = ['apple', 'grape', 'kiwi', 'banana'];
 console.log(secondHalfOfArrayIfItIsEven(fruits));
 
 
+
 // CHALLENGE 2
 function youGottaCalmDown(shout) {
     if (shout.includes('!')) {
         index = shout.indexOf('!');
         last = shout.lastIndexOf('!');
-        final = shout.slice(index, last + 1);
-        return shout - final;
+        final = shout.slice(0, index);
+        return final + '!';
     } else {
         return shout
     }
 }
 
-let word = 'hello!!!!!!';
-//console.log(word.split());
+let word = 'Hellooooo!!!!!!!!';
 console.log(youGottaCalmDown(word));
